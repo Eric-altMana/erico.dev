@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Loukou Eric Junior</title>
+    <meta name="title" content="Portfolio Développeur Full-Stack Loukou Eric Junior">
+    <meta name="description" content="Portfolio Développeur Full-Stack React Reactjs API Applications Intelligence Artificiel JavaScript Backend SQL NoSgl ">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="public\images\lej.png" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/font.css">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+        <span class="line"></span>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="public\images\lej-removebg-preview.png" width="50" height="20" alt="logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" width="84" height="26" alt="logo">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>À Propos</a>
+                    </li>
+
+                    <li>
+                        <a href="#service" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#project" class="navbar-link" data-nav-link>Projets</a>
+                    </li>
+
+                    <!--
+                        <li>
+                        <a href="#review" class="navbar-link" data-nav-link>Review</a>
+                    </li>
+                    -->
+
+                    <li>
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#contact" class="btn btn:hover">
+                <span class="span">Prenez contact</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+            <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <div class="hero text-center" id="home">
+                <div class="container">
+
+                    <div class="shape-1"></div>
+                    <div class="shape-2"></div>
+
+                    <div class="banner-outline has-after">
+
+                        <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+                            <img src="public\images\my-img.jpg" width="500" height="680" alt="Drew Hays"
+                                class="img-cover">
+                        </div>
+
+                        <span class="span title">Eric Loukou</span>
+
+                    </div>
+
+                    <div class="hero-content">
+
+                        <h1 class="h1 title">Développeur Full-Stack & Mobile</h1>
+
+                        <div class="wrapper">
+                            <a href="public\images\Eric Loukou Développeur FullStack CV.pdf" download="public\images\Eric Loukou Développeur FullStack CV.pdf" class="btn btn:hover">
+                                <span class="span">Télécharger CV</span>
+
+                                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                            </a>
+
+                            <p class="hero-text">
+                                Passionné par la création de solutions web robustes et moderne.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" aria-label="about-me" id="about">
+                <div class="container">
+
+                    <div class="shape-3"></div>
+
+                    <div class="tab-container">
+
+                        <ul class="tab-btn-list">
+
+                            <li class="tab-btn-item">
+                                <button class="tab-btn title h6 active" data-tab-btn="about">À Propos</button>
+                            </li>
+
+                            <li class="tab-btn-item">
+                                <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
+                            </li>
+
+                            <li class="tab-btn-item">
+                                <button class="tab-btn title h6" data-tab-btn="awward">Certifications</button>
+                            </li>
+
+                        </ul>
+
+                        <!-- About -->
+                        <div class="tab-content active" data-tab-content="about">
+                            <div class="grid-list">
+
+                                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                                    <img src="public\images\b1.jpg" width="570" height="420" loading="lazy"
+                                        alt="about banner" class="img-cover">
+                                </figure>
+
+                                <div class="about-content">
+
+                                    <h2 class="h4 title section-title">
+                                        Construire des applications solides, scalables et pensées pour l’utilisateur
+                                    </h2>
+
+                                    <p class="section-text">
+                                        Je suis développeur full-stack, avec une approche axée sur la qualité, la clarté
+                                        et la performance. J’intègre des solutions d’IA prêtes à l’emploi pour répondre
+                                        à vos besoins en automatisation, personnalisation ou analyse. Ensemble, donnons
+                                        vie à vos idées.
+                                    </p>
+
+                                    <ul class="about-list">
+
+                                        <li class="about-item">
+                                            <p class="list-title">Nom</p>
+
+                                            <span class="span title h5">Loukou Eric Junior</span>
+                                        </li>
+
+                                        <li class="about-item">
+                                            <p class="list-title">Téléphone</p>
+
+                                            <span class="span title h5">+225 05-76-59-96-01</span>
+                                            <span class="span title h5">+225 07-01-83-40-48</span>
+                                        </li>
+
+                                        <li class="about-item">
+                                            <p class="list-title">Email Address</p>
+
+                                            <span class="span title h5">ericloukoujunior@gmail.com</span>
+                                        </li>
+
+                                        <li class="about-item">
+                                            <p class="list-title">Réseau Social</p>
+
+                                            <div class="social-list">
+                                                <a href="#" class="social-link h6" title="Linkedin">
+                                                    <i class="fi fi-brands-linkedin"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-content" data-tab-content="skillset">
+                            <div class="grid-list">
+
+                                <div class="skill-content">
+
+                                    <h3 class="h4 title section-title">
+                                        Mes expertises techniques au service de vos ambitions digitales.
+                                    </h3>
+
+                                    <ul class="skill-list grid-list">
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">JavaScript</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\js.png" alt="JavaScript" width="50">
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">React.js & React Native</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Reactjs.svg" alt="React" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">Nextjs</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Nextjs.svg" alt="Nextjs" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">Typescript</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Typescript.svg" alt="Typescript" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">SQL</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Sql.svg" alt="SQL" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">NoSQL</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\NoSgl.svg" alt="NoSQL" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">MongoDB</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\MongoDB.svg" alt="MongoDB" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">Nodejs</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Nodejs.png" alt="Nodejs" width="50">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">Prisma</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\prisma.svg" alt="Prisma" width="70">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="skill-wrapper">
+                                                <span class="span">Express</span>
+
+                                                <span class="value">
+                                                    <img src="public\images\Expressjs.png" alt="Express" width="70">
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                                    <img src="public\images\b2.jpg" width="570" height="420" loading="lazy"
+                                        alt="skill banner" class="img-cover">
+                                </figure>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-content" data-tab-content="awward">
+
+                            <h3 class="h4 title section-title">
+                                Certifié et toujours en apprentissage, je mets à jour mes connaissances pour vous offrir
+                                les meilleures solutions.
+                            </h3>
+
+                            <ul class="grid-list">
+
+                                <li>
+                                    <div class="award-card">
+                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
+                                            data-tilt>
+                                            <img src="public\images\Eric Junior Loukou-Web Development Essentials_ Certificate of Completion.pdf.png"
+                                                width="534" height="383" loading="lazy" alt="certificate"
+                                                class="img-cover">
+                                        </figure>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="award-card">
+                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
+                                            data-tilt>
+                                            <img src="public\images\Eric Junior Loukou-Software Development Bootcamp with AI skills Certificate of Completion.pdf.png"
+                                                width="534" height="383" loading="lazy" alt="certificate"
+                                                class="img-cover">
+                                        </figure>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- 
+        - #CTA
+      -->
+
+            <section class="section cta" aria-label="work with me">
+                <div class="container">
+
+                    <div class="shape-3"></div>
+                    <div class="shape-1"></div>
+
+                    <h2 class="title h2 section-title text-center">
+                        Explorez mes services et mes projets <br> puis imaginons le vôtre
+                    </h2>
+
+                    <a href="#contact" class="btn btn:hover">
+                        <span class="span">Contactez-moi</span>
+
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+
+                </div>
+            </section>
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="service text-center" aria-label="my services" id="service">
+                <div class="container">
+
+                    <div class="shape-1"></div>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-1.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Développement <br>
+                                        Frontend
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-4.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Développement <br>
+                                        Backend
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-2.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Applications <br>
+                                        Mobiles
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-3.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Conception d'API <br>
+                                        REST
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-1.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Gestion de <br>
+                                        Bases de Données
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./assets/images/service-icon-4.svg" width="80" height="80" loading="lazy"
+                                        alt="service icon">
+                                </div>
+                                <h3 class="card-title">
+                                    <a href="#">
+                                        Intégration <br>
+                                        IA: Intelligence Artificiel
+                                    </a>
+                                </h3>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <!-- 
+        - #PROJECTS
+      -->
+
+            <section class="section project" aria-label="my latest projects" id="project">
+
+                <div class="shape-2"></div>
+
+                <ul class="slider-list">
+
+                    <li class="slider-item">
+                        <div class="project-card text-center">
+
+                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                                <img src="public\images\ecommerce-tissali.png" width="1000" height="763" loading="lazy"
+                                    alt="Project poster: Plateforme d'E-learning" class="img-cover">
+
+                                <a href="https://tissali-app.vercel.app" target="_blank" class="btn btn:hover">
+                                    <span class="span">Project Details</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-subtitle">App Web E-commerce</p>
+
+                                <h3 class="title h3">
+                                    <a href="#" class="card-title">Plateforme d'E-commerce</a>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="slider-item">
+                        <div class="project-card text-center">
+
+                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                                <img src="public\images\chatbot-ia.avif" width="1000" height="763" loading="lazy"
+                                    alt="Project poster: Application de Gestion de Tâches" class="img-cover">
+
+                                <a href="https://github.com/Eric-altMana/chatbot-ia" target="_blank" class="btn btn:hover">
+                                    <span class="span">Project Details</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-subtitle">Chatbot AI</p>
+
+                                <h3 class="title h3">
+                                    <a href="#" class="card-title">Application de Chatbot</a>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="slider-item">
+                        <div class="project-card text-center">
+
+                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                                <img src="public\images\chat-app.png" width="1000" height="763" loading="lazy"
+                                    alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
+
+                                <a href="https://github.com/Eric-altMana/auth_app" target="_blank" class="btn btn:hover">
+                                    <span class="span">Project Details</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-subtitle">Application Messagerie </p>
+
+                                <h3 class="title h3">
+                                    <a href="#" class="card-title">Application Messagerie en Temps Réel</a>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="slider-item">
+                        <div class="project-card text-center">
+
+                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                                <img src="public\images\gestion-projet.webp" width="1000" height="763" loading="lazy"
+                                    alt="Project poster: Full Web Development Project With JavaScript"
+                                    class="img-cover">
+
+                                <a href="https://github.com/Eric-altMana/gestion-projet" target="_blank" class="btn btn:hover">
+                                    <span class="span">Project Details</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-subtitle">Gestion</p>
+
+                                <h3 class="title h3">
+                                    <a href="#" class="card-title">Application Web de Gestion de Projets</a>
+                                </h3>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+
+
+            <!-- 
+        - #TESTIMONIALS
+
+        <section class="section testi" aria-label="what our client says" id="review">
+                <div class="container">
+
+                    <div class="shape-3"></div>
+
+                    <div class="testi-content">
+
+                        <blockquote class="title h4 section-text">
+                            &ldquo; The average national hourly rate for house cleaning services is $25 to $90 per
+                            individual, or $50
+                            to $90 per hour. The size and condition of your home will strongly impact the price of
+                            these. &rdquo;
+                        </blockquote>
+
+                        <div class="profile-card">
+                            <figure class="card-banner img-holder" style="--width: 70; --height: 70;">
+                                <img src="./assets/images/client.png" width="70" height="70" loading="lazy"
+                                    alt="Alexis browni JR." class="img-cover">
+                            </figure>
+
+                            <div>
+                                <p class="title h5 card-title">Alexis browni JR.</p>
+
+                                <p class="card-subtitle">Founder of alxis co.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+      -->
+
+            
+
+
+
+
+
+            <!-- 
+        - #CONTACT
+      -->
+
+            <section class="section contact" aria-label="contact me" id="contact">
+                <div class="container">
+
+                    <div class="shape-1"></div>
+
+                    <h2 class="title h2 section-title">Prenez contact</h2>
+
+                    <div class="contact-content">
+
+
+                        <ul class="contact-list">
+
+                            <li class="contact-item">
+
+                                <div class="item-icon">
+                                    <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
+                                        alt="contact icon">
+                                </div>
+
+                                <div>
+                                    <span class="title h6">+225 05-76-59-96-01</span>
+
+                                    <span class="title h6">+225 07-01-83-40-48</span>
+                                </div>
+
+                            </li>
+
+                            <li class="contact-item">
+
+                                <div class="item-icon">
+                                    <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
+                                        alt="contact icon">
+                                </div>
+
+                                <div>
+                                    <address class="title h6">
+                                        Côte D'Ivoire --> Abidjan --> Yopougon <br> Côte D'Ivoire --> Yamoussoukro
+                                    </address>
+                                </div>
+
+                            </li>
+
+                            <li class="contact-item">
+
+                                <div class="item-icon">
+                                    <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
+                                        alt="contact icon">
+                                </div>
+
+                                <div>
+                                    <span class="title h6">ericloukoujunior@gmail.com</span>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                        <form action="" method="post" class="contact-form">
+
+                            <input type="text" name="name" placeholder="Nom complet" autocomplete="off" required
+                                class="input-field">
+
+                            <input type="email" name="email_address" placeholder="Address email " autocomplete="off"
+                                required class="input-field">
+
+                            <input type="tel" name="phone" placeholder="Téléphone" autocomplete="off" class="input-field">
+
+                            <textarea name="message" placeholder="Envoer un massges" requiredclass="input-field"></textarea>
+
+                            <button type="submit" class="btn btn:hover">
+                                <span class="span">Envoyer</span>
+
+                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <p class="copyright">
+                Copyright & Design By ericloukoujunior@gmail.com - 2025
+            </p>
+
+            <a href="#top" class="back-top-btn">
+                <span class="span">Retour en haut</span>
+
+                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+            </a>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
